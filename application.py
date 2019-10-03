@@ -34,7 +34,7 @@ def findPwd(_mode):
             return '인증코드까지 확인을 거쳤다면 실제로 비밀번호를 다시 설정할 수 있는 페이지 렌더링'
     else :
         if _mode =='input':
-            data = request.json
+            data = request.json   
             return jsonify(data)
         elif _mode =='authentication':
             return '인증코드를 입력할 수 있는 페이지에서 실제로 입력한 인증코드를 데이터베이스로 전송함'
